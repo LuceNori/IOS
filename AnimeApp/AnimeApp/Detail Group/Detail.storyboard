@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Detail View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="Detail" id="Y6W-OH-hqX" customClass="DetailViewController" customModule="AnimeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Título" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qcT-gn-Uxr">
+                                <rect key="frame" x="32" y="75" width="329" height="28.666666666666671"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wjs-6d-Z2f">
+                                <rect key="frame" x="109" y="135.66666666666666" width="175" height="219.99999999999997"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="175" id="7gB-Vf-RQH"/>
+                                    <constraint firstAttribute="height" constant="220" id="Us3-PL-BFC"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genero" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hT0-nZ-UzW">
+                                <rect key="frame" x="32" y="379.66666666666669" width="329" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descrição" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FR4-l5-4qk">
+                                <rect key="frame" x="32" y="432" width="329" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hT0-nZ-UzW" firstAttribute="top" secondItem="Wjs-6d-Z2f" secondAttribute="bottom" constant="24" id="8u4-1e-8h0"/>
+                            <constraint firstItem="Wjs-6d-Z2f" firstAttribute="top" secondItem="qcT-gn-Uxr" secondAttribute="bottom" constant="32" id="E9C-97-8Kv"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="qcT-gn-Uxr" secondAttribute="trailing" constant="32" id="LHB-ck-lYK"/>
+                            <constraint firstItem="qcT-gn-Uxr" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="32" id="Qf5-1A-liq"/>
+                            <constraint firstItem="FR4-l5-4qk" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="32" id="ZLR-eP-m3M"/>
+                            <constraint firstItem="FR4-l5-4qk" firstAttribute="top" secondItem="hT0-nZ-UzW" secondAttribute="bottom" constant="32" id="afS-Fu-RQt"/>
+                            <constraint firstItem="qcT-gn-Uxr" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="16" id="d62-Xo-bBw"/>
+                            <constraint firstItem="hT0-nZ-UzW" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="32" id="iqI-e6-5so"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="FR4-l5-4qk" secondAttribute="trailing" constant="32" id="lYK-Sz-neC"/>
+                            <constraint firstItem="Wjs-6d-Z2f" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="o7I-pl-smi"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="hT0-nZ-UzW" secondAttribute="trailing" constant="32" id="yYR-01-6Eq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="animeDescription" destination="FR4-l5-4qk" id="dME-YM-kHe"/>
+                        <outlet property="animeGenre" destination="hT0-nZ-UzW" id="7cR-6Z-kb6"/>
+                        <outlet property="animeImageView" destination="Wjs-6d-Z2f" id="xnd-xp-tiU"/>
+                        <outlet property="animeTitle" destination="qcT-gn-Uxr" id="bah-9j-BLX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.69465648854961" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
